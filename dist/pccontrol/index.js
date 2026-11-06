@@ -1,0 +1,10 @@
+// PC control (computer use on macOS through the BruceControl helper): public surface for the dashboard, CLI and tests.
+export { DEFAULT_LIMITS, MIN_ZOOM_LONG_EDGE, MIN_ZOOM_PX, displayAt, fitWithin, imageLimits, imageToScreen, screenToImage, screenshotSize, zoomPlan, } from './geometry.js';
+export { KEY_CODES, MODIFIERS, normalizeModifiers, parseKeyCombo, parseModifier } from './keys.js';
+export { AppResolver, appSearchDirs, checkAppName, looksLikeBundleId, plutilBundleId } from './apps.js';
+export { AUTH_TIMEOUT_MS, BUILD_HINT, DEFAULT_TIMEOUT_MS, MAX_SOCKET_PATH_BYTES, QUIT_HINT, canonicalPath, cleanHelperText, createHelperClient, helperAppPath, helperInstalled, helperMismatch, helperSocketPath, mapHelperError, } from './helper-client.js';
+export { LOG_MAX_ROWS, LOG_RETENTION_MS, PcControlStore } from './store.js';
+export { HOTKEY, NOTIFY_TIMEOUT_MS, NOT_TOLD_NOTE, PcControlService, SETTLE_MS, THUMB_QUALITY, THUMB_WIDTH, getPcControl, parseDisplays, setPcHelperClientForTests, startPcGlowKillSync, } from './service.js';
+export { GLOW_CALL_TTL_MS, GLOW_DEFAULT_PORT, GLOW_KILL_REPUSH_MS, GLOW_KILL_SYNC_MS, GLOW_KILL_TTL_MS, GLOW_SYNC_CAP_MS, GLOW_SYNC_TOOLS, GLOW_TIMEOUT_MS, GlowBridge, glowConfig, glowDetail, } from './glow.js';
+export { PC_TOOL_NAMES, httpUrl, registerPcControlTools } from './tools.js';
+//# sourceMappingURL=index.js.map

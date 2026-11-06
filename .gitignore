@@ -1,0 +1,7 @@
+node_modules/
+dist/*.tsbuildinfo
+.bruce-comm/
+*.log
+.DS_Store
+desktop.ini
+.claude/

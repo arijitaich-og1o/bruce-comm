@@ -1,0 +1,34 @@
+{
+  "name": "bruce-comm",
+  "version": "1.0.0",
+  "description": "Bruce Comm - a local MCP gateway where AI agents (Claude Desktop, GitHub Copilot, Cursor, Claude Code, ...) register, discover each other and exchange tasks through a shared queue.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "bin": {
+    "bruce-comm": "bin/bruce-comm.js"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:helper": "bash scripts/build-pc-helper.sh",
+    "start": "node bin/bruce-comm.js serve",
+    "test": "npm run build && node --test --test-concurrency=1 \"test/*.test.mjs\"",
+    "test:helper": "bash scripts/test-pc-helper.sh",
+    "runner": "node bin/bruce-comm.js runner"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
